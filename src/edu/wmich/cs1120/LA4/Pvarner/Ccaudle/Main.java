@@ -1,7 +1,7 @@
 package edu.wmich.cs1120.LA4.Pvarner.Ccaudle;
 
 public class Main {
-	/**
+	/** 
 	 * This main uses test files that will be sent to ContactInformationFormatter
 	 * @param String[] args
 	 */
