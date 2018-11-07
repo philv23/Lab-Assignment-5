@@ -6,11 +6,19 @@ import java.util.ArrayList;
 public class FormatExceptionHandler implements IFormatExceptionHandler {
 
 	@Override
+	/**
+	 * Handle file not found exception
+	 * @param e
+	 */
 	public void handleFileNotFoundException(FileNotFoundException e) {
 		System.out.println("(The system cannot find the file specified)");
 	}
 
 	@Override
+	/**
+	 * Handle phone number format exception
+	 * @param e
+	 */
 	public void handlePhoneNumberFormatException(PhoneNumberFormatException e) {
 
 		String phoneNumber = e.getPhoneNumber();
@@ -32,6 +40,10 @@ public class FormatExceptionHandler implements IFormatExceptionHandler {
 	}
 
 	@Override
+	/**
+	 * Handle email format exception
+	 * @param e
+	 */
 	public void handleEmailFormatException(EmailAddressFormatException e) {
 		String email = e.getEmail();
 		char temp[] = new char[email.length()];
@@ -51,6 +63,10 @@ public class FormatExceptionHandler implements IFormatExceptionHandler {
 	}
 
 	@Override
+	/**
+	 * Handle name format exception
+	 * @param e
+	 */
 	public void handleNameFormatException(NameFormatException e) {
 
 		String name = e.getName();

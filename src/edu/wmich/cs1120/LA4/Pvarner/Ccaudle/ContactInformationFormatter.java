@@ -7,7 +7,10 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class ContactInformationFormatter implements IContactInformationFormatter {
-
+	/**
+	 * reads contact information from a list of files given the file paths
+	 * @param String[] filePaths
+	 */
 	@Override
 	public void readContactInformation(String[] filePaths) {
 
@@ -33,7 +36,11 @@ public class ContactInformationFormatter implements IContactInformationFormatter
 		}
 
 	}
-
+	
+	/**
+	 * format the contact information in one file
+	 * @param String fileName
+	 */
 	@Override
 	public void formatContactInformation(String fileName) {
 		// TODO Auto-generated method stub
@@ -70,6 +77,11 @@ public class ContactInformationFormatter implements IContactInformationFormatter
 		}
 	}
 
+	/**
+	 * format one email address
+	 * @param String email
+	 * @throws EmailAddressFormatException
+	 */
 	@Override
 	public void formatEmail(String email) throws EmailAddressFormatException {
 		boolean print = true;
@@ -86,6 +98,11 @@ public class ContactInformationFormatter implements IContactInformationFormatter
 
 	}
 
+	/**
+	 * Format one phone number
+	 * @param String phoneNumber
+	 * @throws PhoneNumberFormatException
+	 */
 	@Override
 	public void formatPhoneNumber(String phoneNumber) throws PhoneNumberFormatException {
 		boolean print = true;
@@ -153,6 +170,11 @@ public class ContactInformationFormatter implements IContactInformationFormatter
 
 	}
 
+	/**
+	 * format one name
+	 * @param String name
+	 * @throws NameFormatException
+	 */
 	@Override
 	public void formatName(String name) throws NameFormatException {
 
