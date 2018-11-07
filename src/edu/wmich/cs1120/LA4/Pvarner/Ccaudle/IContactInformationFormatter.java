@@ -16,7 +16,7 @@ public interface IContactInformationFormatter {
 
 	/* format the contact information in one file */
 	/**
-	 * format one email address
+	 * format one email address 
 	 * @param email
 	 * @throws EmailAddressFormatException
 	 */
